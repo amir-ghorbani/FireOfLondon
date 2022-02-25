@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>06</title>
+    
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+
+    <!-- To have access to interactivity:
+    1. Google: event set component aframe
+    2. Go to: aframe-event-set-component - npm
+    3. Copy and paste this line: -->
+    <script src="https://unpkg.com/aframe-event-set-component@4.2.1/dist/aframe-event-set-component.min.js"></script>
+
+    <!-- To make UI elements always facing camera -->
+    <!-- https://www.npmjs.com/package/aframe-look-at-component -->
+    <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
+
+    <!-- Go to AR.js website -->
+    <!-- https://ar-js-org.github.io/AR.js-Docs/marker-based/ -->
+    <!-- https://ar-js-org.github.io/AR.js-Docs/ -->
+    <!-- AR.js with Marker Tracking + Location Based AR: -->
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+
+    <!-- https://github.com/IdeaSpaceVR/aframe-particle-system-component -->
+    <!-- https://www.npmjs.com/package/aframe-particle-system-component -->
+    <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script> 
+
+</head>
+<body>
+    <a-scene embedded arjs>
+        <!-- <a-camera id="camera" position="0 2 0">
+            <a-cursor></a-cursor>
+        </a-camera> -->
+        <a-marker preset="hiro">
+
+
+            <!-- <a-box color="ff0000" material="opacity:0.5" scale="0.5 0.5 0.5" position="0.1 0.5 0"
+                animation="property:rotation; from:0 0 0; to:0 360 0; startEvents:mouseenter"></a-box> -->
+            <!-- <a-box color="ff0000" material="opacity:0.5" scale="0.5 0.5 0.5" position="0 0 0"></a-box> -->
+            <a-entity line__001="start: 0 0 0; end: 0 2 0; color: red"></a-entity>
+            <a-entity text="value: Pudding Lane; color: red; wrapCount: 10; font:dejavu; align: center" position="0 3 0" look-at="#camera"></a-entity>
+            <a-sphere
+                color="red" opacity="0.3" radius="0.5" position="0 0 0" scale="1 1 1"
+                theta-length="90"  
+                segments-height="1"
+                segments-width="1"
+                wireframe="true"
+                animation="property: segments-height; from: 0; to: 20; dur: 1000; loop: true; dir: alternate"
+                ></a-sphere>
+            <a-sphere
+                color="red" opacity="0.3" radius="0.5" position="0.1 0 0" scale="1 1 1" rotation="0 90 0"
+                theta-length="90"  
+                segments-height="1"
+                segments-width="1"
+                wireframe="true"
+                animation__segmentsHeight="property: segments-height; from: 0; to: 20; dur: 1500; loop: true; dir: alternate"
+                animation__color="property: material.opacity; from: 0; to: 0.5; dur: 5000
+                
+                ; dir: alternate"
+                ></a-sphere>
+
+        </a-marker>
+
+        
+
+        <a-entity camera id="camera">
+            <a-cursor></a-cursor>
+        </a-entity>
+
+        
+
+        
+
+        
+
+
+                    
+        
+
+        <!-- <a-entity mixin="location popup" position="0 3.25 -4.5" text="value: Pudding Lane" geometry="width: 2; height: 0.4"></a-entity> -->
+        <!-- <a-entity mixin="image popup" position="0 4.3 -4.5" geometry="width: 2; height: 1.5"></a-entity> -->
+        <!-- <a-entity line__001=" start: 0 0 -4.5; end: 0 2.5 -4.5; color: red"></a-entity> -->
+
+        <!-- <a-sphere
+            displacement-map="#height"
+            displacement-texture-repeat="1 1"
+            displacement-bias="0"
+            displacement-scale="1"
+            segments-height="200"
+            segments-width="20"
+            position="1 0 -3"
+            rotation="0 0 0"
+            scale="2 2 2"
+            color="red"
+            radius="0.1"
+            scale="0.1 0.1 0.1"
+            theta-length="10"
+            opacity="0.3"
+            animation="property: segments-height; from: 0; to: 20; dur: 1000; loop: true; easing: easeOutCubic; dir: alternate"></a-sphere> -->
+
+
+
+
+    </a-scene>
+</body>
+</html>
