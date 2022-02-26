@@ -3,144 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=5.0, minimum-scale=0.86"> -->
-    <title>Index</title>
-    
-    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-    
 
-    <!-- To have access to interactivity:
-    1. Google: event set component aframe
-    2. Go to: aframe-event-set-component - npm
-    3. Copy and paste this line: -->
-    <script src="https://unpkg.com/aframe-event-set-component@4.2.1/dist/aframe-event-set-component.min.js"></script>
+    <!-- To be able to use my mobile phone I have to comment this line -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
 
-    <!-- To make UI elements always facing camera -->
-    <!-- https://www.npmjs.com/package/aframe-look-at-component -->
-    <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
+    <title>Location Based AR</title>
+    
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <!-- <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script> -->
 
     <!-- Go to AR.js website -->
     <!-- https://ar-js-org.github.io/AR.js-Docs/marker-based/ -->
     <!-- https://ar-js-org.github.io/AR.js-Docs/ -->
     <!-- AR.js with Marker Tracking + Location Based AR: -->
-    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+    <!-- <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script> -->
 
-    <!-- https://github.com/IdeaSpaceVR/aframe-particle-system-component -->
-    <!-- https://www.npmjs.com/package/aframe-particle-system-component -->
-    <script src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script> 
+
+    <!-- Go to AR.js website -->
+    <!-- https://ar-js-org.github.io/AR.js-Docs/location-based/ -->
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+
+    <!-- To make UI elements always facing camera -->
+    <!-- https://www.npmjs.com/package/aframe-look-at-component -->
+    <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script> 
+
+    <!-- Go to this website -->
+    <!-- https://www.npmjs.com/package/aframe-physics-system -->
+    <script src="//cdn.rawgit.com/donmccurdy/aframe-physics-system/v4.0.1/dist/aframe-physics-system.min.js"></script>
+
+
 
 </head>
-<body>
-    
-    <a-scene embedded arjs>
-        <!-- <a-camera id="camera" position="0 2 0">
-            <a-cursor></a-cursor>
-        </a-camera> -->
-        
-        <a-marker preset="hiro">
+<!-- Go to AR.js website to find Latitude and Longitude -->
+<!-- https://ar-js-org.github.io/AR.js-Docs/location-based/ -->
+<!-- https://www.latlong.net/ -->
+<body style="margin: 0; overflow: hidden">
 
 
-            <!-- <a-box color="ff0000" material="opacity:0.5" scale="0.5 0.5 0.5" position="0.1 0.5 0"
-                animation="property:rotation; from:0 0 0; to:0 360 0; startEvents:mouseenter"></a-box> -->
-            <!-- <a-box color="ff0000" material="opacity:0.5" scale="0.5 0.5 0.5" position="0 0 0"></a-box> -->
-            <!-- <a-entity line__001="start:2.7 0.1 -1.2; end: 2.7 3 -1.2; color: red"></a-entity> -->
-            <!-- <a-entity text="value: Tower of London; color: black; wrapCount: 20; font:dejavu; align: center" scale="2 2 2" position="2.7 3 -1.2" look-at="#camera"></a-entity> -->
-            
-            <!-- <a-box id="tower-of-london"
-                color="yellow"
-                opacity="0.9"
-                width="0.3"
-                height="1"
-                depth="0.3"
-                position="2.8 0.1 -1.2"
-                rotation="0 -12 0"></a-box>
+    <a-scene embedded arjs="source: webcam;">
+        <a-camera gps-camera rotation-reader></a-camera>
 
-            <a-box id="pudding-lane" color="yellow" opacity="0.9" width="0.1" height="1" depth="0.1" position="1.55 0.1 -1.43" rotation="0 -12 0"></a-box>
-            <a-box id="seething-lane" color="yellow" opacity="0.9" width="0.1" height="1" depth="0.1" position="2.4 0.1 -1.5" rotation="0 -12 0"></a-box> -->
+        <a-box material="color: yellow" gps-entity-place="latitude: 51.501079; longitude: 0.005026" width="5" height="5" depth="5" position="0 30 0"/>
 
-            
-            <a-box id="pudding-lane" color="red" opacity="0.9" width="0.01" height="4" depth="0.01" position="1.5 2 -1.1" rotation="0 0 0"></a-box>
-
-            <a-box id="tower" color="red" opacity="0.9" width="0.3" height="0.3" depth="0.3" position="2.45 0 -0.9" rotation="0 -12 0"></a-box>
-            <a-box id="seething-lane" color="blue" opacity="0.9" width="0.1" height="0.3" depth="0.1" position="2.15 0 -1.3" rotation="0 -12 0"></a-box>
-            <a-box id="gracechurch-st" color="red" opacity="0.9" width="0.2" height="0.3" depth="0.2" position="1.7 0 -1.7" rotation="0 -12 0"></a-box>
-            <a-box id="lombard-st" color="blue" opacity="0.9" width="0.3" height="0.1" depth="0.1" position="1.3 0 -1.7" rotation="0 -25 0"></a-box>
-            <a-box id="cornhill" color="blue" opacity="0.9" width="0.3" height="0.1" depth="0.1" position="1.45 0 -1.9" rotation="0 -12 0"></a-box>
-            <a-box id="royal-exchange" color="red" opacity="0.9" width="0.3" height="0.3" depth="0.3" position="1.25 0 -2.15" rotation="0 -12 0"></a-box>
-            <a-box id="three-cranes-tavern" color="tomato" opacity="0.9" width="0.2" height="0.2" depth="0.2" position="0.5 0 -1.5" rotation="0 -12 0"></a-box>
-            <a-box id="cannon-st" color="blue" opacity="0.9" width="0.5" height="0.05" depth="0.1" position="0.3 0 -1.75" rotation="0 -15 0"></a-box>
-            <a-box id="st-paul" color="red" opacity="0.9" width="0.3" height="0.3" depth="0.3" position="-0.1 0 -2.1" rotation="0 -12 0"></a-box>
-            <a-box id="holborn-bridge" color="blue" opacity="0.9" width="0.4" height="0.05" depth="0.1" position="-0.7 0 -2.5" rotation="0 -17 0"></a-box>
-            <a-box id="whitehall" color="red" opacity="0.9" width="0.3" height="0.3" depth="0.3" position="-4.5 0 -0.2" rotation="0 -12 0"></a-box>
-
-
-            <!-- <a-image src="image/Before.png" rotation="-90 -15 10" width="15" height="8" opacity="0.8" position="0.9 0 -1"></a-image> -->
-
-        
-                <!-- <a-sphere color="red" opacity="0.9" radius="0.5" position="2.7 4 -1.2" scale="1 1 1">
-
-                </a-sphere> -->
-                <!-- <a-cone color="blue" radius-bottom="0.1" radius-top="0.3" position="2 0.1 -1" height="4" opacity="0.6"></a-cone> -->
-
-                <!-- <a-cone color="blue" radius-bottom="0.1" radius-top="0.3" position="0.5 0.1 -2" height="4" opacity="0.6"></a-cone> -->
-
-
-            <!-- Location indicator -->
-            <a-sphere
-                color="red" radius="0.5" position="1.5 4 -1.1" scale="0.2 0.2 0.2"
-                theta-length="180"  
-                segments-height="100"
-                segments-width="100"
-                wireframe="true"
-                animation__opa="property: material.opacity; from: 0; to: 0.5; dur: 500; loop: true; dir: alternate"
-                ></a-sphere>
-
-                <a-sphere color="red" radius="0.5" position="1.5 0 -1.1" scale="0.3 0.3 0.3" theta-length="90" segments-height="20" segments-width="100" wireframe="true"
-                animation__opa="property: material.opacity; from: 0; to: 0.5; dur: 500; loop: true; dir: alternate"
-                ></a-sphere>
-                <a-sphere color="red" radius="0.5" position="1.5 0 -1.1" scale="0.5 0.2 0.5" theta-length="90" segments-height="20" segments-width="100" wireframe="true"
-                animation__opa="property: material.opacity; from: 0; to: 0.5; dur: 520; loop: true; dir: alternate"
-                ></a-sphere>
-                <a-sphere color="red" radius="0.5" position="1.4 0 -1.3" scale="1 0.2 1" rotation="-15" theta-length="90" segments-height="20" segments-width="20" wireframe="true"
-                animation__opa="property: material.opacity; from: 0; to: 0.2; dur: 540; loop: true; dir: alternate"
-                ></a-sphere>
-                <a-sphere color="red" radius="0.5" position="1.1 0 -1.75" scale="2 0.2 2" rotation="-15" theta-length="90" segments-height="20" segments-width="20" wireframe="true"
-                animation__opa="property: material.opacity; from: 0; to: 0.2; dur: 560; loop: true; dir: alternate"
-                ></a-sphere>
-                <a-sphere color="red" radius="0.5" position="1 0 -2" scale="2 0.2 2" rotation="-15" theta-length="90" segments-height="20" segments-width="20" wireframe="true"
-                animation__opa="property: material.opacity; from: 0; to: 0.2; dur: 580; loop: true; dir: alternate"
-                ></a-sphere>
-                <a-sphere color="red" radius="0.5" position="0.5 0 -1.9" scale="2 0.2 2" rotation="-15" theta-length="90" segments-height="20" segments-width="20" wireframe="true"
-                animation__opa="property: material.opacity; from: 0; to: 0.2; dur: 600; loop: true; dir: alternate"
-                ></a-sphere>
-                <a-sphere color="red" radius="0.5" position="0.1 0 -2" scale="2 0.2 2" rotation="-15" theta-length="90" segments-height="20" segments-width="20" wireframe="true"
-                animation__opa="property: material.opacity; from: 0; to: 0.2; dur: 600; loop: true; dir: alternate"
-                ></a-sphere>
-                <a-sphere color="red" radius="0.5" position="-0.5 0 -2.1" scale="1.5 0.2 1.7" rotation="-8" theta-length="90" segments-height="20" segments-width="20" wireframe="true"
-                animation__opa="property: material.opacity; from: 0; to: 0.2; dur: 620; loop: true; dir: alternate"
-                ></a-sphere>
-                <a-sphere color="red" radius="0.5" position="-0.5 0 -2.2" scale="0.5 0.08 0.5" rotation="-8" theta-length="90" segments-height="20" segments-width="50" wireframe="true"
-                animation__opa="property: material.opacity; from: 0; to: 0.2; dur: 640; loop: true; dir: alternate"
-                ></a-sphere>
-                
-
-            
-            <!-- <a-sphere
-                color="red" opacity="0.3" radius="0.5" position="0.1 0 0" scale="1 1 1" rotation="0 90 0"
-                theta-length="90"  
-                segments-height="1"
-                segments-width="1"
-                wireframe="true"
-                animation__segmentsHeight="property: segments-height; from: 0; to: 20; dur: 1500; loop: true; dir: alternate"
-                animation__color="property: material.opacity; from: 0; to: 0.5; dur: 5000; dir: alternate"
-                ></a-sphere> -->
-        </a-marker>
-
-        <!-- <a-entity camera></a-entity> -->
-        <a-entity camera>
-            <a-cursor></a-cursor>
-        </a-entity>
     </a-scene>
-
 </body>
 </html>
