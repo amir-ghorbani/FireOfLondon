@@ -7,7 +7,7 @@
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <title>London</title>
 
-    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     <!-- <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script> -->
 
     <link rel="stylesheet" href="style.css">
@@ -20,10 +20,18 @@
 
     <a-scene embedded arjs>
 
+        <a-assets>
+            <!-- Images. -->
+            <img id="london360" src="./image/St-paul-360.jpg">
+          </a-assets>
+        
+          <!-- 360-degree image. -->
+          <a-sky id="image-360" radius="10" src="#london360"></a-sky>
+
 
         <!-- <a-sound src="/Audio/bensound-cute.mp3" autoplay="true"></a-sound> -->
 
-        <a-sky src="/image/St-paul-360.jpg"></a-sky>
+        <!-- <a-sky src="/image/St-paul-360.jpg"></a-sky> -->
         <!-- <a-ocean width="100" depth="100" density="40"></a-ocean> -->
 
         <section class="container">
