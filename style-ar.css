@@ -1,0 +1,106 @@
+ /* Google Fonts */
+ @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap');
+
+ /* Basic /////////////////////////////////////////////////*/
+ /* :root {
+--primary-color: #282828;
+} */
+
+ * {
+     box-sizing: border-box;
+     padding: 0;
+     margin: 0;
+ }
+
+
+
+
+
+ .title {
+     /* font-family: 'Josefin Sans', sans-serif;
+color: white;
+line-height: 1.6;
+background-color: #28282871;
+display: flex;
+justify-content: center;
+align-items: center;
+text-align: center; 
+margin: auto;
+width: 100%;
+left: auto; */
+
+     position: fixed;
+     align-items: center;
+     text-align: center;
+     left: 0;
+     right: 0;
+     top: 0;
+
+     font-family: 'Josefin Sans', sans-serif;
+     color: white;
+     line-height: 1.6;
+     background-color: #28282871;
+
+
+
+ }
+
+ .nav {
+     position: fixed;
+     align-items: center;
+     text-align: center;
+     left: 0;
+     right: 0;
+     bottom: 0;
+
+     font-family: 'Josefin Sans', sans-serif;
+     color: white;
+     line-height: 1.6;
+     background-color: #28282871;
+     max-width: 220px;
+     margin: 0 auto 10px auto;
+     border-radius: 5px;
+     z-index: 999;
+
+ }
+
+ .nav-child01 {
+     display: flex;
+     justify-content: space-between;
+     text-align: center;
+ }
+
+ .three60 {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    flex-direction: column;
+    text-align: center;
+}
+
+.three60section {
+  
+    max-width: 300px;
+ 
+    padding-bottom: 5px;
+
+}
+
+
+
+
+
+ a {
+     text-decoration: none;
+     color: white;
+
+ }
+
+ h2 {
+     font-weight: 300;
+     line-height: 1.6;
+     margin: 5px 5px;
+     padding: 0 10px;
+
+ }

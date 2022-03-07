@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=5.0, minimum-scale=0.86"> -->
+    <title>Key Locations After The Fire</title>
+
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+
+
+    <!-- To have access to interactivity:
+    1. Google: event set component aframe
+    2. Go to: aframe-event-set-component - npm
+    3. Copy and paste this line: -->
+    <script src="https://unpkg.com/aframe-event-set-component@4.2.1/dist/aframe-event-set-component.min.js"></script>
+
+    <!-- To make UI elements always facing camera -->
+    <!-- https://www.npmjs.com/package/aframe-look-at-component -->
+    <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
+
+
+    <!-- Go to AR.js website -->
+    <!-- https://ar-js-org.github.io/AR.js-Docs/marker-based/ -->
+    <!-- https://ar-js-org.github.io/AR.js-Docs/ -->
+    <!-- AR.js with Marker Tracking + Location Based AR: -->
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+
+    <!-- https://github.com/IdeaSpaceVR/aframe-particle-system-component -->
+    <!-- https://www.npmjs.com/package/aframe-particle-system-component -->
+    <script
+        src="https://unpkg.com/aframe-particle-system-component@1.0.x/dist/aframe-particle-system-component.min.js"></script>
+
+    <link rel="stylesheet" href="style-ar.css">
+
+
+
+
+</head>
+
+<body>
+
+    <!-- HTML to render as a material. -->
+    <section class="text title">
+        <div>
+            <div>
+                <h2>Key <b>Locations</b> After the Fire</h2>
+            </div>
+        </div>
+    </section>
+
+
+    <a-scene embedded arjs>
+
+        <a-marker preset="hiro">
+            <a-sphere color="#A11B1B" radius="0.7" position="0 0 0" scale="0.5 0.5 0.5" theta-length="90" opacity="0.9"
+                segments-height="100" segments-width="100" wireframe="true"
+                animation__opa="property: material.opacity; from: 0; to: 0.5; dur: 500; loop: true; dir: alternate">
+            </a-sphere>
+            <a-cylinder color="#A11B1B" height="0.5" radius="0.01" position="0 0.25 0"></a-cylinder>
+            <a-entity class="london" rotation="0 45 0" position="0 0.8 0" look-at="#camera" scale="0.7 0.7 0.7"
+                event-set__scale01="_event: mouseenter; scale: 1.2 1.2 1.2"
+                event-set__scale02="_event: mouseleave; scale: 0.5 0.5 0.5">
+                <a-box opacity="0.9" width="1.1" height="0.7" depth="0.01" position="0 0 -0.5" color="#A11B1B"></a-box>
+                <a-entity text="value: London After the Fire; color: white; wrapCount: 10; font:dejavu; align: center">
+                </a-entity>
+            </a-entity>
+
+            <a-sphere color="#A11B1B" radius="0.5" position="-0.1 -0.2 -2.1" scale="0.5 0.5 0.5" theta-length="90"
+                opacity="0.9" segments-height="100" segments-width="100" wireframe="true"
+                animation__opa="property: material.opacity; from: 0; to: 0.5; dur: 500; loop: true; dir: alternate">
+            </a-sphere>
+            <a-cylinder color="#A11B1B" height="0.5" radius="0.01" position="-0.1 0.25 -2.1"></a-cylinder>
+            <a-entity class="st-paul" rotation="0 45 0" position="-0.1 0.8 -2.1" look-at="#camera" scale="0.7 0.7 0.7"
+                event-set__scale01="_event: mouseenter; scale: 1.2 1.2 1.2"
+                event-set__scale02="_event: mouseleave; scale: 0.5 0.5 0.5">
+                <a-box opacity="0.9" width="1" height="0.7" depth="0.01" position="0 0 -0.5" color="#A11B1B"></a-box>
+                <a-entity text="value: New St Paul Cathedral; color: white; wrapCount: 10; font:dejavu; align: center">
+                </a-entity>
+            </a-entity>
+
+            <a-sphere color="#A11B1B" radius="0.5" position="1.50 -0.2 -1.45" scale="0.5 0.5 0.5" theta-length="90"
+                opacity="0.9" segments-height="100" segments-width="100" wireframe="true"
+                animation__opa="property: material.opacity; from: 0; to: 0.5; dur: 500; loop: true; dir: alternate">
+            </a-sphere>
+            <a-cylinder color="#A11B1B" height="0.5" radius="0.01" position="1.50 0.25 -1.45"></a-cylinder>
+            <a-entity class="the-monument" rotation="0 45 0" position="1.50 0.8 -1.45" look-at="#camera"
+                scale="0.7 0.7 0.7" event-set__scale01="_event: mouseenter; scale: 1.2 1.2 1.2"
+                event-set__scale02="_event: mouseleave; scale: 0.5 0.5 0.5">
+                <a-box opacity="0.9" width="0.8" height="0.5" depth="0.01" position="0 0 -0.5" color="#A11B1B"></a-box>
+                <a-entity text="value: The Monument; color: white; wrapCount: 10; font:dejavu; align: center">
+                </a-entity>
+            </a-entity>
+
+            <a-sphere color="#A11B1B" radius="0.5" position="-3.5 -0.2 -0.7" scale="0.5 0.5 0.5" theta-length="90"
+                opacity="0.9" segments-height="100" segments-width="100" wireframe="true"
+                animation__opa="property: material.opacity; from: 0; to: 0.5; dur: 500; loop: true; dir: alternate">
+            </a-sphere>
+            <a-entity class="phoenix" rotation="0 45 0" position="-3.5 0.6 -0.7" look-at="#camera" scale="0.7 0.7 0.7"
+                event-set__scale01="_event: mouseenter; scale: 1.2 1.2 1.2"
+                event-set__scale02="_event: mouseleave; scale: 0.5 0.5 0.5">
+                <a-box opacity="0.9" width="1" height="1" depth="0.01" position="0 0 -0.5" color="#A11B1B"></a-box>
+                <a-image src="image/phoenix.jpg" width="1" height="1.333" opacity="1" position="0 1.2 -0.8"></a-image>
+                <a-entity text="value: Phoenix Fire Insurance Company; color: white; wrapCount: 10; font:dejavu; align: center">
+                </a-entity>
+            </a-entity>
+
+
+           
+
+            <a-sphere color="#A11B1B" radius="0.5" position="1.45 -0.2 -2" scale="0.5 0.5 0.5" theta-length="90"
+                opacity="0.9" segments-height="100" segments-width="100" wireframe="true"
+                animation__opa="property: material.opacity; from: 0; to: 0.5; dur: 500; loop: true; dir: alternate">
+            </a-sphere>
+            <a-cylinder color="#A11B1B" height="0.5" radius="0.01" position="1.45 0.25 -2"></a-cylinder>
+            <a-entity class="sun-fire-office" rotation="0 45 0" position="1.45 0.8 -2" look-at="#camera"
+                scale="0.7 0.7 0.7" event-set__scale01="_event: mouseenter; scale: 1.2 1.2 1.2"
+                event-set__scale02="_event: mouseleave; scale: 0.5 0.5 0.5">
+                <a-box opacity="0.9" width="0.8" height="0.5" depth="0.01" position="0 0 -0.5" color="#A11B1B"></a-box>
+                <a-image src="image/Sun-insurance-company-firemark.jpg" width="1" height="1" opacity="1" position="0 0.75 -0.8"></a-image>
+                <a-entity text="value: Sun Fire Office; color: white; wrapCount: 10; font:dejavu; align: center">
+                </a-entity>
+            </a-entity>
+
+            
+        </a-marker>
+
+        <!-- <a-entity camera></a-entity> -->
+        <a-entity camera id="camera">
+            <a-cursor material="color: yellow" scale="0.7 0.7 0.7"></a-cursor>
+        </a-entity>
+
+
+    </a-scene>
+
+    <!-- HTML to render as a material. -->
+    <section class="text nav">
+        <div class="nav-child01">
+            <div>
+                <h2><a href="day-03-04-05.html">Back</a></h2>
+            </div>
+            <div>
+                <h2><a href="after-locations-map.html">Next</a></h2>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+<script>
+    document.querySelector('.london')
+.addEventListener('mousedown', e => {
+    location.href = "after-fire-description.html";
+});
+
+document.querySelector('.st-paul')
+.addEventListener('mousedown', e => {
+    location.href = "new-st-paul02.html";
+});
+
+document.querySelector('.the-monument')
+.addEventListener('mousedown', e => {
+    location.href = "monument02.html";
+});
+
+document.querySelector('.phoenix')
+.addEventListener('mousedown', e => {
+    location.href = "phoenix.html";
+});
+
+document.querySelector('.sun-fire-office')
+.addEventListener('mousedown', e => {
+    location.href = "sun-fire-office.html";
+});
+
+</script>
+
+</html>

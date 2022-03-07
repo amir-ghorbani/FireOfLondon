@@ -1,0 +1,104 @@
+
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap');
+
+/* Basic /////////////////////////////////////////////////*/
+:root {
+    --primary-color: #282828;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    color: white;
+    line-height: 1.6;
+    background-color: var(--primary-color);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    
+}
+
+h2 {
+    font-weight: 300;
+    line-height: 1.6;
+    margin: 10px 10px;
+    padding: 0 10px;
+    
+}
+
+a h2 {
+    background-color: white;
+    border-radius: 5px;
+    max-width: 200px;
+    margin: 0 auto;
+    color: var(--primary-color);
+}
+
+
+
+p {
+    margin: 10px 0;
+    padding: 0 35px;
+}
+
+.btn {
+    margin:0 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+
+}
+.btn a {
+    margin: 5px;
+}
+
+
+
+
+.container {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    text-align: center;
+    margin: auto;
+    height: 100vh;
+
+}
+
+.logo {
+    width: 100%;
+    padding: 20px;
+    max-width: 150px;
+}
+
+.picture {
+    width: 100%;
+    padding: 5px;
+    max-width: 1050px;
+}
+
+.instruction {
+    width: 100%;
+    padding: 20px;
+    max-width: 400px;
+}
+.instruction02 {
+    width: 60%;
+}
+
+
+
+
