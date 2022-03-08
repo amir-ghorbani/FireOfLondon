@@ -73,7 +73,6 @@ p {
     align-items: center;
     
     text-align: center;
-    margin: auto;
     height: 100vh;
 
 }
@@ -97,6 +96,11 @@ p {
 }
 .instruction02 {
     width: 60%;
+}
+
+.pepys, .phoenix {
+    /* margin-top: 100px; */
+    height: 100%;
 }
 
 

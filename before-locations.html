@@ -125,6 +125,19 @@
                 <a-entity text="value: St Paul Cathedral; color: white; wrapCount: 10; font:dejavu; align: center">
                 </a-entity>
             </a-entity>
+
+            <a-sphere color="#A11B1B" radius="0.5" position="1.1 -0.2 -1.1" scale="0.5 0.5 0.5" theta-length="90"
+                opacity="0.9" segments-height="100" segments-width="100" wireframe="true"
+                animation__opa="property: material.opacity; from: 0; to: 0.5; dur: 500; loop: true; dir: alternate">
+            </a-sphere>
+            <a-cylinder color="#A11B1B" height="0.5" radius="0.01" position="1.1 0.25 -1.1"></a-cylinder>
+            <a-entity class="london-bridge" rotation="0 45 0" position="1.1 0.8 -1.1" look-at="#camera" scale="0.7 0.7 0.7"
+                event-set__scale01="_event: mouseenter; scale: 1.2 1.2 1.2"
+                event-set__scale02="_event: mouseleave; scale: 0.5 0.5 0.5">
+                <a-box opacity="0.9" width="0.8" height="0.5" depth="0.01" position="0 0 -0.5" color="#A11B1B"></a-box>
+                <a-entity text="value: London Bridge; color: white; wrapCount: 10; font:dejavu; align: center">
+                </a-entity>
+            </a-entity>
         
 
             
@@ -197,6 +210,11 @@ document.querySelector('.st-paul')
 document.querySelector('.whitehall')
 .addEventListener('mousedown', e => {
     location.href = "whitehall.html";
+});
+
+document.querySelector('.london-bridge')
+.addEventListener('mousedown', e => {
+    location.href = "london-bridge.html";
 });
 </script>
 
