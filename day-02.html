@@ -52,133 +52,183 @@
 
 
         <a-marker preset="hiro">
-            <a-sphere color="#A11B1B" radius="0.7" position="0 0 0" scale="0.5 0.5 0.5" theta-length="90" opacity="0.9"
+            <!-- <a-sphere color="#A11B1B" radius="0.7" position="0 0 0" scale="0.5 0.5 0.5" theta-length="90" opacity="0.9"
             segments-height="100" segments-width="100" wireframe="true"
             animation__opa="property: material.opacity; from: 0; to: 0.5; dur: 500; loop: true; dir: alternate">
-        </a-sphere>
-        <a-cylinder color="#A11B1B" height="0.5" radius="0.01" position="0 0.25 0"></a-cylinder>
-        <a-entity class="london" rotation="0 45 0" position="0 0.8 0" look-at="#camera" scale="0.7 0.7 0.7"
+        </a-sphere> -->
+        <!-- <a-cylinder color="#A11B1B" height="0.5" radius="0.01" position="0 0.25 0"></a-cylinder> -->
+        <a-entity class="london" rotation="0 45 0" position="0 0 0" look-at="#camera" scale="0.7 0.7 0.7"
             event-set__scale01="_event: mouseenter; scale: 1.2 1.2 1.2"
             event-set__scale02="_event: mouseleave; scale: 0.5 0.5 0.5">
-            <a-box opacity="0.9" width="0.7" height="0.3" depth="0.01" position="0 0 -0.5" color="#A11B1B"></a-box>
+            <!-- <a-box opacity="0.9" width="0.7" height="0.3" depth="0.01" position="0 0 -0.5" color="#A11B1B"></a-box> -->
+            <a-cylinder position="0 0 -0.5" radius="0.6" rotation="0 90 90" height="0.2" color="#A11B1B"
+                    opacity="0.8"></a-cylinder>
             <a-entity text="value: Day 02; color: white; wrapCount: 10; font:dejavu; align: center">
             </a-entity>
         </a-entity>
 
-            <a-sphere id="lombard-st-sphere" color="#FFBA05" radius="0.3" position="1.3 -0.2 -1.7" scale="0.5 0.5 0.5"
+            <!-- <a-sphere id="lombard-st-sphere" color="#FFBA05" radius="0.3" position="1.3 -0.2 -1.7" scale="0.5 0.5 0.5"
                 theta-length="90" opacity="0.8">
-            </a-sphere>
-            <a-cylinder color="#FFBA05" height="1.5" radius="0.01" position="1.3 0.75 -1.7"></a-cylinder>
-            <a-entity id="lombard-st-text" rotation="0 45 0" position="1.3 1.7 -1.7" look-at="#camera"
+            </a-sphere> -->
+            <!-- <a-cylinder color="#FFBA05" height="1.5" radius="0.01" position="1.3 0.75 -1.7"></a-cylinder> -->
+            <a-entity id="lombard-st-text" rotation="0 45 0" position="1.3 -0.1 -1.7" look-at="#camera"
                 scale="0.7 0.7 0.7">
-                <a-box opacity="0.9" width="0.8" height="0.5" depth="0.01" position="0 0 -0.5" color="#FFBA05"></a-box>
+                <!-- <a-box opacity="0.9" width="0.8" height="0.5" depth="0.01" position="0 0 -0.5" color="#FFBA05"></a-box> -->
+                <a-cylinder position="0 0 -0.5" radius="0.6" rotation="0 90 90" height="0.2" color="#808080"
+                    opacity="0.8"></a-cylinder>
                 <a-entity text="value: Lombard Street; color: black; wrapCount: 11; font:dejavu; align: center">
                 </a-entity>
             </a-entity>
 
-            <a-sphere id="gracechurch-st-sphere" color="#FFBA05" radius="0.3" position="1.7 -0.2 -1.7"
+            <!-- <a-sphere id="gracechurch-st-sphere" color="#FFBA05" radius="0.3" position="1.7 -0.2 -1.7"
                 scale="0.5 0.5 0.5" theta-length="90" opacity="0.8">
-            </a-sphere>
-            <a-cylinder color="#FFBA05" height="1" radius="0.01" position="1.7 0.5 -1.7"></a-cylinder>
-            <a-entity id="gracechurch-st-text" rotation="0 45 0" position="1.7 1.2 -1.7" look-at="#camera"
+            </a-sphere> -->
+            <!-- <a-cylinder color="#FFBA05" height="1" radius="0.01" position="1.7 0.5 -1.7"></a-cylinder> -->
+            <a-entity id="gracechurch-st-text" rotation="0 45 0" position="1.7 -0.2 -1.7" look-at="#camera"
                 scale="0.7 0.7 0.7">
-                <a-box opacity="0.9" width="1.1" height="0.5" depth="0.01" position="0 0 -0.5" color="#FFBA05"></a-box>
+                <!-- <a-box opacity="0.9" width="1.1" height="0.5" depth="0.01" position="0 0 -0.5" color="#FFBA05"></a-box> -->
+                <a-cylinder position="0 0 -0.5" radius="0.6" rotation="0 90 90" height="0.2" color="#808080"
+                    opacity="0.8"></a-cylinder>
                 <a-entity text="value: Gracechurch Street; color: black; wrapCount: 11; font:dejavu; align: center">
                 </a-entity>
             </a-entity>
 
-            <a-sphere color="#FFBA05" radius="0.3" position="1.25 -0.2 -2.15" scale="0.5 0.5 0.5" theta-length="90"
+            <!-- <a-sphere color="#FFBA05" radius="0.3" position="1.25 -0.2 -2.15" scale="0.5 0.5 0.5" theta-length="90"
                 opacity="0.8">
-            </a-sphere>
-            <a-cylinder color="#FFBA05" height="0.5" radius="0.01" position="1.25 0.25 -2.15"></a-cylinder>
-            <a-entity class="royal-exchange" rotation="0 45 0" position="1.25 0.8 -2.15" look-at="#camera"
+            </a-sphere> -->
+            <!-- <a-cylinder color="#FFBA05" height="0.5" radius="0.01" position="1.25 0.25 -2.15"></a-cylinder> -->
+            <a-entity class="royal-exchange" rotation="0 45 0" position="1.25 0 -2.15" look-at="#camera"
                 scale="0.7 0.7 0.7">
-                <a-box opacity="0.9" width="0.9" height="0.5" depth="0.01" position="0 0 -0.5" color="#FFBA05"></a-box>
+                <!-- <a-box opacity="0.9" width="0.9" height="0.5" depth="0.01" position="0 0 -0.5" color="#FFBA05"></a-box> -->
+                <a-cylinder position="0 0 -0.5" radius="0.6" rotation="0 90 90" height="0.2" color="#808080"
+                    opacity="0.8"></a-cylinder>
                 <a-entity text="value: Royal Exchange; color: black; wrapCount: 10; font:dejavu; align: center">
                 </a-entity>
             </a-entity>
 
-            <a-sphere color="#FFBA05" radius="0.3" position="-0.1 -0.2 -2.1" scale="0.5 0.5 0.5" theta-length="90"
+            <!-- <a-sphere color="#FFBA05" radius="0.3" position="-0.1 -0.2 -2.1" scale="0.5 0.5 0.5" theta-length="90"
                 opacity="0.8">
-            </a-sphere>
-            <a-cylinder color="#FFBA05" height="0.5" radius="0.01" position="-0.1 0.25 -2.1"></a-cylinder>
-            <a-entity class="st-paul" rotation="0 45 0" position="-0.1 0.8 -2.1" look-at="#camera" scale="0.7 0.7 0.7">
-                <a-box opacity="0.9" width="1" height="0.5" depth="0.01" position="0 0 -0.5" color="#FFBA05"></a-box>
+            </a-sphere> -->
+            <!-- <a-cylinder color="#FFBA05" height="0.5" radius="0.01" position="-0.1 0.25 -2.1"></a-cylinder> -->
+            <a-entity class="st-paul" rotation="0 45 0" position="-0.1 0 -2.1" look-at="#camera" scale="0.7 0.7 0.7">
+                <!-- <a-box opacity="0.9" width="1" height="0.5" depth="0.01" position="0 0 -0.5" color="#FFBA05"></a-box> -->
+                <a-cylinder position="0 0 -0.5" radius="0.6" rotation="0 90 90" height="0.2" color="#808080"
+                    opacity="0.8"></a-cylinder>
                 <a-entity text="value: St Paul Cathedral; color: black; wrapCount: 10; font:dejavu; align: center">
                 </a-entity>
             </a-entity>
 
            
 
-            <a-sphere color="#FFBA05" radius="0.3" position="1.50 -0.2 -1.45" scale="0.5 0.5 0.5" theta-length="90"
+            <!-- <a-sphere color="#FFBA05" radius="0.3" position="1.50 -0.2 -1.45" scale="0.5 0.5 0.5" theta-length="90"
                 opacity="0.8">
-            </a-sphere>
-            <a-cylinder color="#FFBA05" height="0.5" radius="0.01" position="1.50 0.25 -1.45"></a-cylinder>
-            <a-entity class="pudding-lane" rotation="0 45 0" position="1.50 0.8 -1.45" look-at="#camera"
+            </a-sphere> -->
+            <!-- <a-cylinder color="#FFBA05" height="0.5" radius="0.01" position="1.50 0.25 -1.45"></a-cylinder> -->
+            <a-entity class="pudding-lane" rotation="0 45 0" position="1.50 0.2 -1.45" look-at="#camera"
                 scale="0.7 0.7 0.7">
-                <a-box opacity="0.9" width="0.8" height="0.5" depth="0.01" position="0 0 -0.5" color="#FFBA05"></a-box>
+                <!-- <a-box opacity="0.9" width="0.8" height="0.5" depth="0.01" position="0 0 -0.5" color="#FFBA05"></a-box> -->
+                <a-cylinder position="0 0 -0.5" radius="0.6" rotation="0 90 90" height="0.2" color="#808080"
+                    opacity="0.7"></a-cylinder>
                 <a-entity text="value: Pudding Lane; color: black; wrapCount: 10; font:dejavu; align: center">
                 </a-entity>
             </a-entity>
 
-            <a-sphere color="#FFBA05" radius="0.3" position="2.15 -0.2 -1.4" scale="0.5 0.5 0.5" theta-length="90"
+            <!-- <a-sphere color="#FFBA05" radius="0.3" position="2.15 -0.2 -1.4" scale="0.5 0.5 0.5" theta-length="90"
                 opacity="0.8">
-            </a-sphere>
-            <a-cylinder color="#FFBA05" height="0.5" radius="0.01" position="2.15 0.25 -1.4"></a-cylinder>
-            <a-entity class="seething-lane" rotation="0 45 0" position="2.15 0.8 -1.4" look-at="#camera"
+            </a-sphere> -->
+            <!-- <a-cylinder color="#FFBA05" height="0.5" radius="0.01" position="2.15 0.25 -1.4"></a-cylinder> -->
+            <a-entity class="seething-lane" rotation="0 45 0" position="2.15 0 -1.4" look-at="#camera"
                 scale="0.7 0.7 0.7">
-                <a-box opacity="0.9" width="0.9" height="0.5" depth="0.01" position="0 0 -0.5" color="#FFBA05"></a-box>
+                <!-- <a-box opacity="0.9" width="0.9" height="0.5" depth="0.01" position="0 0 -0.5" color="#FFBA05"></a-box> -->
+                <a-cylinder position="0 0 -0.5" radius="0.6" rotation="0 90 90" height="0.2" color="#808080"
+                    opacity="0.8"></a-cylinder>
                 <a-entity text="value: Seething Lane; color: black; wrapCount: 10; font:dejavu; align: center">
                 </a-entity>
             </a-entity>
 
-            <a-sphere color="#FFBA05" radius="0.3" position="-4.5 -0.2 -0.2" scale="0.5 0.5 0.5" theta-length="90"
+            <!-- <a-sphere color="#FFBA05" radius="0.3" position="-4.5 -0.2 -0.2" scale="0.5 0.5 0.5" theta-length="90"
                 opacity="0.8">
-            </a-sphere>
-            <a-entity class="whitehall" rotation="0 45 0" position="-4.5 0.5 -0.2" look-at="#camera"
+            </a-sphere> -->
+            <a-entity class="whitehall" rotation="0 45 0" position="-4.5 0 -0.2" look-at="#camera"
                 scale="0.7 0.7 0.7">
-                <a-box opacity="0.9" width="1" height="0.35" depth="0.01" position="0 0 -0.5" color="#FFBA05"></a-box>
+                <!-- <a-box opacity="0.9" width="1" height="0.35" depth="0.01" position="0 0 -0.5" color="#FFBA05"></a-box> -->
+                <a-cylinder position="0 0 -0.5" radius="0.6" rotation="0 90 90" height="0.2" color="#808080"
+                    opacity="0.8"></a-cylinder>
                 <a-entity text="value: whitehall; color: black; wrapCount: 10; font:dejavu; align: center">
                 </a-entity>
             </a-entity>
 
-            <a-sphere id="cannon-st-sphere" color="#FFBA05" radius="0.3" position="0.3 -0.2 -1.75" scale="0.5 0.5 0.5"
+            <!-- <a-sphere id="cannon-st-sphere" color="#FFBA05" radius="0.3" position="0.3 -0.2 -1.75" scale="0.5 0.5 0.5"
                 theta-length="90" opacity="0.8">
-            </a-sphere>
-            <a-cylinder color="#FFBA05" height="1" radius="0.01" position="0.3 0.5 -1.75"></a-cylinder>
-            <a-entity id="cannon-st-text" rotation="0 45 0" position="0.3 1.2 -1.75" look-at="#camera"
+            </a-sphere> -->
+            <!-- <a-cylinder color="#FFBA05" height="1" radius="0.01" position="0.3 0.5 -1.75"></a-cylinder> -->
+            <a-entity id="cannon-st-text" rotation="0 45 0" position="0.2 -0.2 -1.75" look-at="#camera"
                 scale="0.7 0.7 0.7">
-                <a-box opacity="0.9" width="0.7" height="0.5" depth="0.01" position="0 0 -0.5" color="#FFBA05"></a-box>
+                <!-- <a-box opacity="0.9" width="0.7" height="0.5" depth="0.01" position="0 0 -0.5" color="#FFBA05"></a-box> -->
+                <a-cylinder position="0 0 -0.5" radius="0.6" rotation="0 90 90" height="0.2" color="#808080"
+                    opacity="0.8"></a-cylinder>
+
                 <a-entity text="value: Cannon Street; color: black; wrapCount: 10; font:dejavu; align: center">
                 </a-entity>
             </a-entity>
 
-            <a-sphere id="three-cranes-tavern-sphere" color="#FFBA05" radius="0.3" position="0.5 -0.2 -1.5"
+            <!-- <a-sphere id="three-cranes-tavern-sphere" color="#FFBA05" radius="0.3" position="0.5 -0.2 -1.5"
                 scale="0.5 0.5 0.5" theta-length="90" opacity="0.8">
-            </a-sphere>
-            <a-cylinder color="#FFBA05" height="0.5" radius="0.01" position="0.5 0.25 -1.5"></a-cylinder>
-            <a-entity id="three-cranes-tavern-text" rotation="0 45 0" position="0.5 0.8 -1.5" look-at="#camera"
+            </a-sphere> -->
+            <!-- <a-cylinder color="#FFBA05" height="0.5" radius="0.01" position="0.5 0.25 -1.5"></a-cylinder> -->
+            <a-entity id="three-cranes-tavern-text" rotation="0 45 0" position="0.5 0.2 -1.5" look-at="#camera"
                 scale="0.7 0.7 0.7">
-                <a-box opacity="0.9" width="0.8" height="0.7" depth="0.01" position="0 0 -0.5" color="#FFBA05"></a-box>
+                <!-- <a-box opacity="0.9" width="0.8" height="0.7" depth="0.01" position="0 0 -0.5" color="#FFBA05"></a-box> -->
+                <a-cylinder position="0 0 -0.5" radius="0.6" rotation="0 90 90" height="0.2" color="#808080"
+                    opacity="0.7"></a-cylinder>
+
                 <a-entity text="value: Three Cranes Tavern; color: black; wrapCount: 10; font:dejavu; align: center">
                 </a-entity>
             </a-entity>
 
+            <a-sphere color="red" radius="0.5" position="1.50 0 -1.45" scale="1 1 1" rotation="0 -15 0"
+            animation__opa="property: material.opacity; from: 0; to: 0.8; dur: 500; loop: true; dir: alternate" theta-length="90">
+        </a-sphere>
+
+        <a-sphere color="red" radius="0.5" position="1 0 -1.45" scale="1 1 1" rotation="0 -15 0"
+            animation__opa="property: material.opacity; from: 0; to: 0.8; dur: 520; loop: true; dir: alternate" theta-length="90">
+        </a-sphere>
+
+        <a-sphere color="red" radius="0.5" position="0.5 0 -1.5" scale="1 1 1" rotation="0 -15 0"
+            animation__opa="property: material.opacity; from: 0; to: 0.8; dur: 540; loop: true; dir: alternate" theta-length="90">
+        </a-sphere>
+<!-- ------ -->
+        <a-sphere color="red" radius="0.5" position="0.3 0 -1.75" scale="1 1 1" rotation="0 -15 0"
+            animation__opa="property: material.opacity; from: 0; to: 0.8; dur: 560; loop: true; dir: alternate" theta-length="90">
+        </a-sphere>
+
+        <a-sphere color="red" radius="0.5" position="-0.1 0 -2.1" scale="1 1 1" rotation="0 -15 0"
+            animation__opa="property: material.opacity; from: 0; to: 0.8; dur: 580; loop: true; dir: alternate" theta-length="90">
+        </a-sphere>
+<!-- ------ -->
+        <a-sphere color="red" radius="0.5" position="1.7 0 -1.7" scale="1 1 1" rotation="0 -15 0"
+            animation__opa="property: material.opacity; from: 0; to: 0.8; dur: 520; loop: true; dir: alternate" theta-length="90">
+        </a-sphere>
+
+        <a-sphere color="red" radius="0.5" position="1.25 0 -2.15" scale="1 1 1" rotation="0 -15 0"
+            animation__opa="property: material.opacity; from: 0; to: 0.8; dur: 540; loop: true; dir: alternate" theta-length="90">
+        </a-sphere>
 
 
 
-            <a-sphere color="red" radius="0.5" position="1.15 0 -1.3" scale="1.3 0.2 0.7" rotation="0 -15 0"
+
+            <!-- <a-sphere color="yellow" radius="0.5" position="1.15 0 -1.3" scale="1.3 0.5 0.7" rotation="0 -15 0"
                 theta-length="90" segments-height="20" segments-width="20" wireframe="true"
                 animation__opa="property: material.opacity; from: 0; to: 0.2; dur: 540; loop: true; dir: alternate">
-            </a-sphere>
-            <a-sphere color="red" radius="0.5" position="1.15 0 -1.6" scale="1.3 0.2 0.7" rotation="0 -15 0"
+            </a-sphere> -->
+            <!-- <a-sphere color="yellow" radius="0.5" position="1.15 0 -1.6" scale="1.3 0.5 0.7" rotation="0 -15 0"
                 theta-length="90" segments-height="20" segments-width="20" wireframe="true"
                 animation__opa="property: material.opacity; from: 0; to: 0.2; dur: 560; loop: true; dir: alternate">
-            </a-sphere>
-            <a-sphere color="red" radius="0.5" position="0.6 0 -1.5" scale="2 0.2 0.8" rotation="0 -10 0"
+            </a-sphere> -->
+            <!-- <a-sphere color="yellow" radius="0.5" position="0.6 0 -1.5" scale="2 0.5 0.8" rotation="0 -10 0"
                 theta-length="90" segments-height="20" segments-width="20" wireframe="true"
                 animation__opa="property: material.opacity; from: 0; to: 0.2; dur: 580; loop: true; dir: alternate">
-            </a-sphere>
+            </a-sphere> -->
    
       
         </a-marker>
