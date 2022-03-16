@@ -40,10 +40,23 @@ left: auto; */
      font-family: 'Josefin Sans', sans-serif;
      color: white;
      line-height: 1.6;
-     background-color: #28282871;
+     background-color: #282828b9;
+     z-index: 999;
 
 
 
+ }
+
+ .title img {
+     width: 100%;
+     padding: 0 25px 10px 25px;
+     max-width: 350px;
+ }
+
+ .title h2 {
+     color: #F17700;
+     font-weight: bold;
+     font-size: 22px;
  }
 
  .nav {
@@ -53,11 +66,10 @@ left: auto; */
      left: 0;
      right: 0;
      bottom: 0;
-
      font-family: 'Josefin Sans', sans-serif;
      color: white;
      line-height: 1.6;
-     background-color: #28282871;
+     background-color: #282828b9;
      max-width: 220px;
      margin: 0 auto 10px auto;
      border-radius: 5px;

@@ -40,13 +40,18 @@
         <div>
             <div>
                 <h2>Map of london after the fire</h2>
+                <img src="./image/08.png" alt="">
             </div>
         </div>
     </section>
 
 
-    <a-scene vr-mode-ui="enabled: false" embedded arjs>
-        <a-marker preset="hiro">
+    <a-scene vr-mode-ui="enabled: false" embedded arjs="detectionMode: mono_and_matrix; matrixCodeType: 3x3_PARITY65">
+
+        <!-- <a-marker preset="hiro"> -->
+        <!-- <a-marker preset="kanji"> -->
+
+        <a-marker type="barcode" value="24">
 
             <!-- <a-sphere color="#A11B1B" radius="0.7" position="0 0 0" scale="0.5 0.5 0.5" theta-length="90" opacity="0.9"
                 segments-height="100" segments-width="100" wireframe="true"
@@ -68,7 +73,7 @@
                 opacity="0.8">
             </a-sphere> -->
             <!-- <a-cylinder color="#FFBA05" height="0.5" radius="0.01" position="-0.1 0.25 -2.1"></a-cylinder> -->
-            <a-entity class="st-paul" rotation="0 45 0" position="-0.1 0.2 -2.1" look-at="#camera" scale="0.7 0.7 0.7">
+            <a-entity class="st-paul" rotation="0 45 0" position="-0.1 0 -2.1" look-at="#camera" scale="0.7 0.7 0.7">
                 <!-- <a-box opacity="0.9" width="1" height="0.7" depth="0.01" position="0 0 -0.5" color="#FFBA05"></a-box> -->
                 <a-cylinder position="0 0 -0.5" radius="0.6" rotation="0 90 90" height="0.2" color="#808080"
                 opacity="0.8"></a-cylinder>
@@ -154,7 +159,7 @@
 
         <!-- <a-entity camera></a-entity> -->
         <a-entity camera id="camera">
-            <a-cursor material="color: yellow" scale="0.7 0.7 0.7"></a-cursor>
+            <a-cursor material="color: white" scale="0.7 0.7 0.7"></a-cursor>
         </a-entity>
     </a-scene>
 

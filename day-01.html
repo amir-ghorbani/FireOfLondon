@@ -43,16 +43,19 @@
         <div>
             <div>
                 <h2>Day one</h2>
+                <img src="./image/04.png" alt="">
             </div>
 
 
         </div>
     </section>
 
-    <a-scene vr-mode-ui="enabled: false" embedded arjs>
+    <a-scene vr-mode-ui="enabled: false" embedded arjs="detectionMode: mono_and_matrix; matrixCodeType: 3x3_PARITY65">
 
+        <!-- <a-marker preset="hiro"> -->
+        <!-- <a-marker preset="kanji"> -->
 
-        <a-marker preset="hiro">
+        <a-marker type="barcode" value="24">
 
             <!-- <a-sphere color="#A11B1B" radius="0.7" position="0 0 0" scale="0.5 0.5 0.5" theta-length="90" opacity="0.9"
                 segments-height="100" segments-width="100" wireframe="true"
@@ -141,15 +144,15 @@
 
 
 
-            <a-sphere color="red" radius="0.5" position="1.50 0 -1.45" scale="1 1 1" rotation="0 -15 0"
+            <a-sphere color="#F17700" radius="0.5" position="1.50 0 -1.45" scale="1 1 1" rotation="0 -15 0"
             animation__opa="property: material.opacity; from: 0; to: 0.8; dur: 500; loop: true; dir: alternate" theta-length="90">
         </a-sphere>
 
-        <a-sphere color="red" radius="0.5" position="1 0 -1.45" scale="1 1 1" rotation="0 -15 0"
+        <a-sphere color="#F17700" radius="0.5" position="1 0 -1.45" scale="1 1 1" rotation="0 -15 0"
             animation__opa="property: material.opacity; from: 0; to: 0.8; dur: 520; loop: true; dir: alternate" theta-length="90">
         </a-sphere>
 
-        <a-sphere color="red" radius="0.5" position="0.5 0 -1.5" scale="1 1 1" rotation="0 -15 0"
+        <a-sphere color="#F17700" radius="0.5" position="0.5 0 -1.5" scale="1 1 1" rotation="0 -15 0"
             animation__opa="property: material.opacity; from: 0; to: 0.8; dur: 540; loop: true; dir: alternate" theta-length="90">
         </a-sphere>
 
@@ -162,7 +165,7 @@
 
         <!-- <a-entity camera></a-entity> -->
         <a-entity camera id="camera">
-            <a-cursor material="color: yellow" scale="0.7 0.7 0.7"></a-cursor>
+            <a-cursor material="color: white" scale="0.7 0.7 0.7"></a-cursor>
         </a-entity>
     </a-scene>
 
