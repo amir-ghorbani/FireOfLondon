@@ -70,7 +70,7 @@ left: auto; */
      color: white;
      line-height: 1.6;
      background-color: #282828b9;
-     max-width: 220px;
+     max-width: 300px;
      margin: 0 auto 10px auto;
      border-radius: 5px;
      z-index: 999;
@@ -116,4 +116,11 @@ left: auto; */
      margin: 5px 5px;
      padding: 0 10px;
 
+ }
+
+ #full-screen {
+     width: 45px;
+     /* margin-bottom: -28px; */
+     margin: 0 20px -26px 20px;
+     /* margin-top: 10px; */
  }

@@ -40,19 +40,25 @@
 
     <link rel="stylesheet" href="style-ar.css">
 
+    <script src="./script-full-screen.js"></script>
+
 
 
 
 </head>
 
+
 <body>
+    
 
     <!-- HTML to render as a material. -->
     <section class="text title">
         <div>
             <div>
                 <h2>Key locations before the fire</h2>
+                
                 <img src="./image/01.png" alt="">
+       
             </div>
         </div>
     </section>
@@ -129,6 +135,7 @@
             </a-entity>
 
         </a-marker>
+        
 
         <!-- <a-entity camera></a-entity> -->
         <a-entity camera id="camera">
@@ -138,10 +145,14 @@
 
     <!-- HTML to render as a material. -->
     <section class="text nav">
+
         <div class="nav-child01">
             <div>
                 <h2><a href="instruction02.html">Back</a></h2>
             </div>
+            <!-- <div >
+                <img id="full-screen" src="./image/FullScreen.svg" alt="">
+            </div> -->
             <div>
                 <h2><a href="before-locations-map.html">Next</a></h2>
             </div>
@@ -150,7 +161,13 @@
     </section>
 
 </body>
+
+
 <script>
+    
+
+
+
     document.querySelector('.london')
         .addEventListener('mousedown', e => {
             location.href = "london.html";
@@ -191,5 +208,12 @@
             location.href = "st-paul.html";
         });
 </script>
+
+<!-- <script>
+    var goFS = document.getElementById("full-screen");
+goFS.addEventListener("click", function() {
+document.body.requestFullscreen();
+}, false);
+</script> -->
 
 </html>
